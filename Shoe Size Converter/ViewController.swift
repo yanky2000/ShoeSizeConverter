@@ -30,6 +30,7 @@ class ViewController: UIViewController {
 
     @IBAction func convertButtonPressed(sender: UIButton) {
         
+        //Converting Men's shoe size
         let convRate = 30
         convertedEUMenShoeSize.text = "\(enterUSMenShoeSize.text.toInt()! + convRate) in European Size"
         convertedEUMenShoeSize.hidden = false
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
 
     @IBAction func WomenButton(sender: UIButton) {
         
+        //converting women's shoe sizes
         let convRate  = 30.5
         convertedWomenShoeSize.text = "\(Double((enterUSWomenShoeSize.text as NSString).doubleValue) + convRate) in Eu"
         convertedWomenShoeSize.hidden = false
